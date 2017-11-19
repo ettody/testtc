@@ -32,6 +32,9 @@ var Point3D = /** @class */ (function (_super) {
         var point2D = _super.prototype.add.call(this, point);
         return new Point3D(point2D.x, point2D.y, this.z + point.z);
     };
+    Point3D.prototype.hitungvolume = function () {
+        return this.x * this.y * this.z;
+    };
     return Point3D;
 }(Point));
 exports.Point3D = Point3D;

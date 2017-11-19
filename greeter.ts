@@ -1,5 +1,5 @@
 import modulsuper = require("./mysuper");
-var mypuint = new modulsuper.Point(10,100);
+var mypuint = new modulsuper.Point3D(10,100,10);
 class Student{
     fullname : string;
     constructor(public firstname: string, public middleinitial: string, public lastname: string){
@@ -18,4 +18,4 @@ function greeter(person : Person){
 }
 
 var user = new Student("Jane", "K.","Riatry");
-console.log(mypuint.y);
+console.log(mypuint.hitungvolume());

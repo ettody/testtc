@@ -20,4 +20,7 @@ export class Point3D extends Point{ //Turunan dari Class Point
         var point2D = super.add(point);
         return new Point3D(point2D.x, point2D.y, this.z + point.z);
     }
+    hitungvolume(){
+        return this.x * this.y * this.z;
+    }
 }
